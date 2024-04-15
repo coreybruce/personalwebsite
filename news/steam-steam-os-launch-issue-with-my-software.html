@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../images/icon.png">
+<link href="../css/ui.css" rel="stylesheet"></link>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="../js/navigation.js"></script>
+<link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+<head>
+    <title>Steam/Steam OS launch issue with my software</title>
+</head>
+<body>
+    <div class="uibox">
+  <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+  <!--end of Navigation bar-->
+          <div class="divline"></div>
+          <ul class="flex-container">
+          <div class="app-bloguibox app-newblockcnt">
+            <div class="app-news-cont">
+              <div class="app-datebox-newscont">
+                <div class="app-datebox">29th Jan 2023</div>
+              </div> 
+            </div>  
+            <div class="app-news-title">Steam/Steam OS launch issue with my software</div>
+          <div class="app-newsspacer2"></div>
+          <div class="app-news-cont">
+          <div class="app-news-textbox-full">I have made a report to Valve on a Steam issue where electron apps in Linux will not properly execute, take ages to even start but will only flash open and can even stall or cause issues with Steam which will make it unresponsive after you launch the non steam apps.
+           <p></p>
+            I have a full git report on the issue <a href="https://github.com/ValveSoftware/steam-for-linux/issues/9131" target="_blank">here</a>
+            <p></p>
+            Hopefully this gets corrected soon as this renders all my software specifically for the Steam Deck unusable unless you are in desktop mode but on normal Linux distros you will just be unable to add it to Steam and launch from Steam and the big picture mode especially if you are in the beta branch using the new Steam big picture UI.
+          </div>
+          </div>
+          <div class="app-codespacer"></div>
+          <div class="codecont-center">
+            <div class="flex-appbox code-box code-box-resize">
+              > Twitch@1.0.5 start
+              <p></p>
+              > electron .
+              <p></p>
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              IPC error: LockMgrMutex failed to acquire SysMgrMutex
+              <p></p>
+              (steam:75731): Gtk-WARNING **: 16:33:25.295: gtk_disable_setlocale() must be called before gtk_init()
+              <p></p>
+              (steam:75731): Gtk-WARNING **: 16:33:25.305: gtk_disable_setlocale() must be called before gtk_init()
+              (steam:75731): Gtk-WARNING **: 16:33:25.305: gtk_disable_setlocale() must be called before gtk_init()
+              ERROR: ld.so: object '/home/corey/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+              [89648:0124/163450.543771:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.549276:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.550437:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.551080:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.551772:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.552490:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.553364:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.554097:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.554908:ERROR:gpu_process_host.cc(985)] GPU process launch failed: error_code=1002
+              [89648:0124/163450.554933:FATAL:gpu_data_manager_impl_private.cc(440)] GPU process isn't usable. Goodbye.
+              /opt/libelectron/node_modules/electron/dist/electron exited with signal SIGTRAP
+              Game process removed: AppID 0 "/home/corey/.local/share/Steam/ubuntu12_32/reaper SteamLaunch AppId=3087126011 -- /home/corey/.local/share/Steam/ubuntu12_32/steam-launch-wrapper -- "Twitch"", ProcID 89624 
+              Uploaded AppInterfaceStats to Steam
+              <p></p>
+              (steam:75731): Gtk-WARNING **: 16:34:56.491: gtk_disable_setlocale() must be called before gtk_init()
+            </div>
+            <div class="app-news-cont">
+              <div class="app-news-textbox-full">
+                Looks like some weird GPU stuff is happening, no idea what Steam is doing when launching it but whatever it is needs to be corrected as it break all electron apps and not just mine when added to Steam/Steam OS.
+              </div>
+            </div>
+            <!--Start of commentbox-->
+               <div class="app-newsspacer2"></div>
+               <div class="commentboxcont">
+                <div class="commentbox">
+                <script id="dsq-count-scr" src="//steam-steam-os-launch-issue-with-my-software.disqus.com/count.js" async></script>
+                <div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://steam-steam-os-launch-issue-with-my-software.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+<!--End of comment block-->
+    </div>
+  </div>
+</body>
+</html>

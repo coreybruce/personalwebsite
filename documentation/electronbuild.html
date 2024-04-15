@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../images/icon.png">
+<link href="../css/ui.css" rel="stylesheet"></link>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="../js/navigation.js"></script>
+<link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+<head>
+    <title>Documentation: Building</title>
+</head>
+<body>
+    <div class="uibox">
+  <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+  <!--end of Navigation bar-->
+          <div class="divline"></div>
+          <ul class="flex-container">
+          <div class="app-bloguibox app-newblockcnt">
+            <div class="app-news-cont">
+            </div>
+              <body>
+             <!--Doc Navigation bar-->
+              <div id="docnav-placeholder"></div>
+             <!--end of Doc Navigation bar-->
+              
+             <div class="doccontent app-doccont flex-appbox doc-flexbox">
+             <div class="app-newsspacer"></div> 
+             <div class="app-news-cont">
+              <div class="app-news-textbox-full">
+                <div id="#building" class="app-news-title">Electron Build Instructions:</div>
+                <div class="doc-textbox-cont">
+                  <div class="doc-textbox">
+                This will give you simple documented instructions on how to compile my applications for all platforms: (Linux, Windows and Mac) as well as architectures like (X64,Arm64 and Arm7l) unless it is using Electron Castlab for video DRM. There will have different instructions below. 
+              </div>
+              </div>
+              <div class="codecont-center">
+                <div class="flex-appbox code-box code-box-resize">
+                  git clone https://gitlab.com/projectname <p>
+                  cd projectname <p>
+                  npm i <p>
+                  ./node_modules/.bin/electron-packager . --all <p></p>
+                  </div>
+                 </div>
+                </div>
+                <div class="app-newsspacer2"></div>
+                <div class="app-news-cont">
+                  <div class="app-news-textbox-full">
+                    <div class="app-news-title">Electron Castlab Build Instructions:</div>
+                    <div class="doc-textbox-cont">
+                      <div class="doc-textbox">
+                    For my software that requires DRM Widevine please follow these instructions. Note: this does not support Arm7l or Arm64 Linux as it does not have a native Linux Arm version yet.
+                  </div>
+                </div>
+             <div class="codecont-center">
+               <div class="flex-appbox code-box code-box-resize" id="electron-castlab">
+                 git clone https://gitlab.com/projectname <p>
+                 cd projectname <p>
+                 npm i <p></p>
+                 ./node_modules/.bin/electron-builder --linux --win --x64<p></p>
+                 </div>
+                </div>
+      </div>
+    </div> 
+</div>
+</div>
+</body>
+</html>         

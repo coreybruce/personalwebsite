@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0,0,256,256"
+   width="240px"
+   height="240px"
+   fill-rule="nonzero"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="twitter-icon.svg"
+   xml:space="preserve"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs3" /><sodipodi:namedview
+     id="namedview3"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.3897549"
+     inkscape:cx="-44.971958"
+     inkscape:cy="13.3117"
+     inkscape:window-width="1920"
+     inkscape:window-height="936"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" /><g
+     id="layer1"
+     transform="matrix(0.25551717,0,0,0.27297812,-71.612,-45.647281)">&#10;	<path
+   id="path1009"
+   d="M 283.94,167.31 670.33,683.95 281.5,1104 h 87.51 L 709.43,736.24 984.48,1104 h 297.8 L 874.15,558.3 1236.07,167.31 h -87.51 L 835.05,506.01 581.74,167.31 Z m 128.69,64.46 h 136.81 l 604.13,807.76 h -136.81 z" />&#10;</g></svg>
